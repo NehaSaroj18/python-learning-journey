@@ -51,4 +51,72 @@
 # print(l)
 
 #prime 1oritself
+#string replaced
+
+# l = [1,2,4,4,5]
+# print(max(l))
+
+# numbers = [5, 3, 9, 1, 7]
+# largest = numbers[0]
+
+# for num in numbers:
+#     if num>largest:
+#         largest = num
+
+# print("Largest:", largest)
+
+# def count_letter(word, letter):
+#     count = 0
+#     for ch in word:
+#         if ch == letter:
+#             count += 1
+#     return count
+
+# print(count_letter("banana", "a"))  # 3
+
+# def count_letter(word,letter):
+#     count = 0
+#     for ch in word:
+#         if ch == letter:
+#             count+=1
+#     return count
+# print(count_letter("banana","b"))
+
+# a,b = 0, 1
+# a,b=0,1
+# for i in range(10):
+#     print(a, end=" ")
+#     a, b = b, a + b
+# # 0 1 1 2 3 5 8 13 21 34
+
+# a,b = 0,1
+# for i in range(10):
+#     print(a,end=" ")
+#     a,b = b,a+b
+
+# def is_palindrome(s):
+#     s = s.lower()
+#     for i in range(len(s) // 2):
+#         if s[i] != s[len(s) - 1 - i]:
+#             return False
+#     return True
+
+# print(is_palindrome("non"))  # True
+# print(is_palindrome("hello"))    # False
+
+# def is_palindrome(s):
+#     s = s.lower()
+#     for i in range(len(s) // 2):
+#         if s[i] != s[len(S) - 1 - i]:
+#             return False
+
+def remove_duplicates(lst):
+    result = []
+    for item in lst:
+        if item not in result:
+            result.append(item)
+    return result
+
+print(remove_duplicates([1, 2, 2, 3, 4, 4, 5]))
+# [1, 2, 3, 4, 5]
 
