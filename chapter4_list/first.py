@@ -22,3 +22,4 @@ print(list)
 
 value=list.pop(3)
 print(value)
+
