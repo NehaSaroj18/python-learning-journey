@@ -1,0 +1,25 @@
+import random
+
+def game():
+    print("You are playing the game!")
+    score = random.randint(1, 62)
+
+    # Fetch the high score
+    with open("highscore.txt", "r") as f:
+        highscore = f.read()
+
+        if highscore != "":
+            highscore = int(highscore)
+        else:
+            highscore = 0
+
+    print(f"Your score: {score}")
+
+    if score > highscore:
+        print("New High Score!")
+        with open("highscore.txt", "w") as f:
+            f.write(str(score))
+
+    return score
+
+game()
