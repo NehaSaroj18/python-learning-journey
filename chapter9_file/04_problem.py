@@ -1,26 +1,26 @@
 # 4. A file contains a word “Donkey” multiple times. You need to write a program 
 # which replace this word with ##### by updating the same file.  
 
-# word = "donkey"
+word = "donkey"
 
-# with open("chapter9_file/file.txt", "r") as f:
-#     content = f.read()
+with open("chapter9_file/file.txt", "r") as f:
+    content = f.read()
 
-# contentNew = content.replace(word, "######")
+contentNew = content.replace(word, "######")
 
-# with open("chapter9_file/file.txt", "w") as f:
-#     f.write(contentNew)
+with open("chapter9_file/file.txt", "w") as f:
+    f.write(contentNew)
     
     
+# for multiple word change    
     
-    
-words = "Donkey"
+words = ["Donkey","mud"]
 
 with open("chapter9_file/file.txt", "r") as f:
     content = f.read()
 
 for word in words:
-     content= content.replace(word, "######")
+     content= content.replace(word, "#" * len(word))
 
 with open("chapter9_file/file.txt", "w") as f:
     f.write(content)
