@@ -3,10 +3,12 @@
 
 word = "donkey"
 
-with open("file.txt" ,"r") as f:
+with open("chapter9_file/file.txt", "r") as f:
     content = f.read()
 
-contentNew = content.replace(word,"######")
+contentNew = content.replace(word, "######")
 
-with open("file.txt","w") as f :
+with open("chapter9_file/file.txt", "w") as f:
     f.write(contentNew)
+    
+    
