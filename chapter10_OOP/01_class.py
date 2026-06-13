@@ -1,12 +1,14 @@
 # syntax
-class Empolyee:
-    name ="neha"
+class Employee:
     language = "py"
     salary = 120000
     
     
-neha = Empolyee()
-print(neha.name , neha.language)
+neha = Employee()
+print(neha.language , neha.salary)
+
+kanha = Employee()
+print(kanha. language , kanha.salary)
 
 
-Here name is object attribute and 
+# Here name is object attribute and language , salary are class attribute
