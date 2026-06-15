@@ -2,7 +2,10 @@ class Employee:
     language = "Python";
     salary = 120000;
     
-    def __init__(self):
+    def __init__(self,name,language,salary):  #here we don
+        self.salary = salary
+        self.name = name
+        self.language = language
         print("Hello , Here is your information")
     
     @staticmethod
@@ -13,11 +16,9 @@ class Employee:
         print(f"The language is {self.language} and the salary is (self.salary)")
         
 Employee.greet()
-harry = Employee()
-harry.name = "Harry"
-print(harry.name , harry.salary)
+harry = Employee("Harry" , "Python" , 50000)
+print(harry.name ,harry.language , harry.salary)
 
-Radhe = Employee()
-Radhe.name = "Radhe"
+Radhe = Employee("Kanha","c",900000)
 print(Radhe.name , Radhe.language, Radhe.salary )
 
