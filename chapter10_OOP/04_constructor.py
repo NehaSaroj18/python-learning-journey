@@ -2,7 +2,7 @@ class Employee:
     language = "Python";
     salary = 120000;
     
-    def __init__(self,name,language,salary):  #here we don
+    def __init__(self,name,language,salary): # "__init__() is a special method (constructor) that runs automatically when we create an object from a class, so we don't have to call it ourselves."
         self.salary = salary
         self.name = name
         self.language = language
